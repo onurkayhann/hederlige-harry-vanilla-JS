@@ -12,3 +12,20 @@ const email = document.getElementById('email').value;
 button.addEventListener('click', function () {
     console.log(email);
 });
+
+// 3. Skriv en funktion createParagraph som tar emot en text som parameter.
+// Funktionen ska sedan skapa en <p>-tag med den inskickade texten som värde.
+// Funktionen ska sedan returnera den skapade <p>-taggen.
+function createParagraph(text) {
+    let paragraph = document.createElement('p'); // Skapar p-tagg
+
+    paragraph.textContent = text; // sätt texten som värde för p
+
+    return paragraph;
+}
+
+let myText = 'Jag heter Onur Kayhan';
+
+let myParagraph = createParagraph(myText);
+
+document.body.appendChild(myParagraph);
