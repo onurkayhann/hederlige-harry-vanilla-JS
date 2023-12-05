@@ -47,3 +47,21 @@ phone.addEventListener('input', function () {
         console.log('Fill in the phone field');
     }
 });
+
+// 5. Skapa ett PRIVAT repository på Github, alla nödvändiga filer skall pushas dit.
+// Bjud in marcus.brederfalt@systementor.se som Collaborator
+
+// 6. Skriv in URL till ditt github som svar här i Learnpoint
+
+// Krav för VG:
+
+// 6. Skapa en ny branch som du kallar för VG
+
+// 7.  När man ändrar email-fältet: Om man skrivit in en ".se"-address så ska du: skapa/visa ett fält som heter swedishpostalcode med klass bx-code. Annars ska den INTE visas
+
+// 8. Skapa en array med 10 bilar - varje bil ska ha bildurl + id  + typ + årtal. Dessa ska renderas så som dom görs idag
+// id = löpnummer bildurl = det finns ca 100 bilar på
+
+// https://axmjqhyyjpat.objectstorage.eu-amsterdam-1.oci.customer-oci.com/n/axmjqhyyjpat/b/randomimages/o/cars%2F13.png
+// osv där 13 på slutet är ett löpnummer
+// Pris = sätt till vad du vill
