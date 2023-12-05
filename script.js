@@ -7,9 +7,9 @@
 // med id "email" och logga den texten i konsolen med console.log
 // KLAR✅
 const button = document.getElementById('button-contact');
-const email = document.getElementById('email').value;
 
 button.addEventListener('click', function () {
+    const email = document.getElementById('email').value;
     console.log(email);
 });
 
@@ -17,19 +17,33 @@ button.addEventListener('click', function () {
 // Funktionen ska sedan skapa en <p>-tag med den inskickade texten som värde.
 // Funktionen ska sedan returnera den skapade <p>-taggen.
 // KLAR✅
+let myText = 'Jag heter Onur Kayhan';
+
 function createParagraph(text) {
     let paragraph = document.createElement('p'); // Skapar p-tagg
 
     paragraph.textContent = text; // sätt texten som värde för p
+    document.body.appendChild(paragraph);
 
-    return paragraph;
+    // return paragraph;
 }
 
-let myText = 'Jag heter Onur Kayhan';
-
-let myParagraph = createParagraph(myText);
-
-document.body.appendChild(myParagraph);
+createParagraph(myText);
 
 // 4. Varje gång man ÄNDRAR på phone så ska funktionen createParagraph anropas -
 // du skickar med värdet i phone och p-taggen som returneras ska skrivas till console.log - både p och phone?
+const phoneElements = document.getElementsByClassName(
+    'contact__form__box__input'
+);
+const phone = phoneElements[2];
+
+phone.addEventListener('input', function () {
+    const phoneText = 'Filling the phone field';
+
+    if (phone.value.trim() !== '') {
+        createParagraph(phoneText);
+        console.log(phone.value, phoneText);
+    } else {
+        console.log('Fill in the phone field');
+    }
+});
