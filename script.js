@@ -16,6 +16,7 @@ button.addEventListener('click', function () {
 // 3. Skriv en funktion createParagraph som tar emot en text som parameter.
 // Funktionen ska sedan skapa en <p>-tag med den inskickade texten som värde.
 // Funktionen ska sedan returnera den skapade <p>-taggen.
+// KLAR✅
 function createParagraph(text) {
     let paragraph = document.createElement('p'); // Skapar p-tagg
 
