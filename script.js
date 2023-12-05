@@ -30,3 +30,6 @@ let myText = 'Jag heter Onur Kayhan';
 let myParagraph = createParagraph(myText);
 
 document.body.appendChild(myParagraph);
+
+// 4. Varje gång man ÄNDRAR på phone så ska funktionen createParagraph anropas - 
+// du skickar med värdet i phone och p-taggen som returneras ska skrivas till console.log
