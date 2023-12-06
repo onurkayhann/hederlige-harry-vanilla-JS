@@ -24,11 +24,7 @@ function createParagraph(text) {
 
     paragraph.textContent = text; // sätt texten som värde för p
     document.body.appendChild(paragraph);
-
-    // return paragraph;
 }
-
-createParagraph(myText);
 
 // 4. Varje gång man ÄNDRAR på phone så ska funktionen createParagraph anropas -
 // du skickar med värdet i phone och p-taggen som returneras ska skrivas till console.log - både p och phone?
@@ -44,7 +40,7 @@ phone.addEventListener('input', function () {
         createParagraph(phoneText);
         console.log(phone.value, phoneText);
     } else {
-        console.log('Fill in the phone field');
+        console.log('Please dont leave it empty, fill in the phone field');
     }
 });
 
