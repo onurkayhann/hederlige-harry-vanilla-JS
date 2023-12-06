@@ -53,7 +53,9 @@ phone.addEventListener('input', function () {
 
 // 6. Skapa en ny branch som du kallar för VG✅
 
-// 7.  När man ändrar email-fältet: Om man skrivit in en ".se"-address så ska du: skapa/visa ett fält som heter swedishpostalcode med klass bx-code. Annars ska den INTE visas
+// 7. När man ändrar email-fältet: Om man skrivit in en ".se"-address så ska du: 
+// skapa/visa ett fält som heter swedishpostalcode med klass bx-code. 
+// Annars ska den INTE visas
 
 // 8. Skapa en array med 10 bilar - varje bil ska ha bildurl + id  + typ + årtal. Dessa ska renderas så som dom görs idag
 // id = löpnummer bildurl = det finns ca 100 bilar på
