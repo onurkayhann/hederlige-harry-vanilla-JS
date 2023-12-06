@@ -57,6 +57,7 @@ phone.addEventListener('input', function () {
 // skapa/visa ett fält som heter swedishpostalcode med klass bx-code. 
 // Annars ska den INTE visas
 
+
 // 8. Skapa en array med 10 bilar - varje bil ska ha bildurl + id  + typ + årtal. Dessa ska renderas så som dom görs idag
 // id = löpnummer bildurl = det finns ca 100 bilar på
 
