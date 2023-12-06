@@ -45,13 +45,13 @@ phone.addEventListener('input', function () {
 });
 
 // 5. Skapa ett PRIVAT repository på Github, alla nödvändiga filer skall pushas dit.
-// Bjud in marcus.brederfalt@systementor.se som Collaborator
+// Bjud in marcus.brederfalt@systementor.se som Collaborator✅
 
 // 6. Skriv in URL till ditt github som svar här i Learnpoint
 
 // Krav för VG:
 
-// 6. Skapa en ny branch som du kallar för VG
+// 6. Skapa en ny branch som du kallar för VG✅
 
 // 7.  När man ändrar email-fältet: Om man skrivit in en ".se"-address så ska du: skapa/visa ett fält som heter swedishpostalcode med klass bx-code. Annars ska den INTE visas
 
