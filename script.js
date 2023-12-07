@@ -126,6 +126,48 @@ const cars = [
         price: '50 000 kr',
         url: 'https://axmjqhyyjpat.objectstorage.eu-amsterdam-1.oci.customer-oci.com/n/axmjqhyyjpat/b/randomimages/o/cars%2F4.png',
     },
+    {
+        id: 5,
+        type: 'Lamborghini',
+        year: 1957,
+        price: '300 000 kr',
+        url: 'https://axmjqhyyjpat.objectstorage.eu-amsterdam-1.oci.customer-oci.com/n/axmjqhyyjpat/b/randomimages/o/cars%2F5.png',
+    },
+    {
+        id: 6,
+        type: 'Volvo',
+        year: 1980,
+        price: '10 000 kr',
+        url: 'https://axmjqhyyjpat.objectstorage.eu-amsterdam-1.oci.customer-oci.com/n/axmjqhyyjpat/b/randomimages/o/cars%2F6.png',
+    },
+    {
+        id: 7,
+        type: 'Aston Martin',
+        year: 2023,
+        price: '2 000 000 kr',
+        url: 'https://axmjqhyyjpat.objectstorage.eu-amsterdam-1.oci.customer-oci.com/n/axmjqhyyjpat/b/randomimages/o/cars%2F7.png',
+    },
+    {
+        id: 8,
+        type: 'Rolls Royce',
+        year: 2010,
+        price: '250 000 kr',
+        url: 'https://axmjqhyyjpat.objectstorage.eu-amsterdam-1.oci.customer-oci.com/n/axmjqhyyjpat/b/randomimages/o/cars%2F8.png',
+    },
+    {
+        id: 9,
+        type: 'Mazerati',
+        year: 2020,
+        price: '700 000 kr',
+        url: 'https://axmjqhyyjpat.objectstorage.eu-amsterdam-1.oci.customer-oci.com/n/axmjqhyyjpat/b/randomimages/o/cars%2F9.png',
+    },
+    {
+        id: 10,
+        type: 'Fiat',
+        year: 1958,
+        price: '20 000 kr',
+        url: 'https://axmjqhyyjpat.objectstorage.eu-amsterdam-1.oci.customer-oci.com/n/axmjqhyyjpat/b/randomimages/o/cars%2F10.png',
+    },
 ];
 
 for (const car of cars) {
