@@ -103,7 +103,7 @@ const cars = [
     {
         id: 1,
         type: 'BMW',
-        year: 2022,
+        year: 1973,
         price: '100 000 kr',
         url: 'https://axmjqhyyjpat.objectstorage.eu-amsterdam-1.oci.customer-oci.com/n/axmjqhyyjpat/b/randomimages/o/cars%2F1.png',
     },
