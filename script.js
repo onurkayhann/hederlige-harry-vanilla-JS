@@ -93,7 +93,43 @@ newEmail.addEventListener('input', checkEmail);
 
 // 8. Skapa en array med 10 bilar - varje bil ska ha bildurl + id  + typ + årtal. Dessa ska renderas så som dom görs idag
 // id = löpnummer bildurl = det finns ca 100 bilar på
-
 // https://axmjqhyyjpat.objectstorage.eu-amsterdam-1.oci.customer-oci.com/n/axmjqhyyjpat/b/randomimages/o/cars%2F13.png
 // osv där 13 på slutet är ett löpnummer
 // Pris = sätt till vad du vill
+
+const cars = [
+    {
+        id: 1,
+        type: 'BMW',
+        year: 2022,
+        price: '100 000 kr',
+        url: 'https://axmjqhyyjpat.objectstorage.eu-amsterdam-1.oci.customer-oci.com/n/axmjqhyyjpat/b/randomimages/o/cars%2F1.png',
+    },
+    {
+        id: 2,
+        type: 'Tesla',
+        year: 2019,
+        price: '400 000 kr',
+        url: 'https://axmjqhyyjpat.objectstorage.eu-amsterdam-1.oci.customer-oci.com/n/axmjqhyyjpat/b/randomimages/o/cars%2F2.png',
+    },
+    {
+        id: 3,
+        type: 'BMW',
+        year: 2022,
+        price: '1 000 000 kr',
+        url: 'https://axmjqhyyjpat.objectstorage.eu-amsterdam-1.oci.customer-oci.com/n/axmjqhyyjpat/b/randomimages/o/cars%2F3.png',
+    },
+    {
+        id: 4,
+        type: 'Ferrari',
+        year: 1955,
+        price: '50 000 kr',
+        url: 'https://axmjqhyyjpat.objectstorage.eu-amsterdam-1.oci.customer-oci.com/n/axmjqhyyjpat/b/randomimages/o/cars%2F4.png',
+    },
+];
+
+for (const car of cars) {
+    console.log(
+        `ID: ${car.id}, Type: ${car.type}, Year: ${car.year}, Price: ${car.price}, URL: ${car.url}\n`
+    );
+}
