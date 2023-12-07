@@ -170,8 +170,41 @@ const cars = [
     },
 ];
 
+const existingProductCard = document.querySelector('.productcard');
+
 for (const car of cars) {
     console.log(
         `ID: ${car.id}, Type: ${car.type}, Year: ${car.year}, Price: ${car.price}, URL: ${car.url}\n`
     );
+
+    const divCard = document.createElement('div');
+    divCard.setAttribute('class', 'productcard');
+
+    const img = document.createElement('img');
+    img.setAttribute('src', car.url);
+
+    const divInfo = document.createElement('div');
+    divInfo.setAttribute('class', 'information');
+
+    const divName = document.createElement('div');
+    divName.setAttribute('class', 'name');
+    divName.textContent = car.type;
+
+    const divDescription = document.createElement('div');
+    divDescription.setAttribute('class', 'description');
+    divDescription.textContent = car.year;
+
+    const cta = document.createElement('a');
+    cta.setAttribute('class', 'ctabutton');
+    cta.setAttribute('href', '#');
+    cta.textContent = car.price;
+
+    divCard.appendChild(img);
+    divCard.appendChild(divInfo);
+
+    divInfo.appendChild(divName);
+    divInfo.appendChild(divDescription);
+    divInfo.appendChild(cta);
+
+    existingProductCard.insertAdjacentElement('afterend', divCard);
 }
