@@ -57,6 +57,9 @@ phone.addEventListener('input', function () {
 // skapa/visa ett fält som heter swedishpostalcode med klass bx-code.
 // Annars ska den INTE visas
 const newEmail = document.getElementById('email');
+
+const i = document.createElement('i');
+
 const br = document.createElement('br');
 
 let parentNode = document.querySelector('.contact__form__box');
@@ -64,17 +67,25 @@ let parentNode = document.querySelector('.contact__form__box');
 // Function to check email and add input
 function checkEmail() {
     if (newEmail.value.includes('.se')) {
+        const i = document.createElement('i');
         let input = document.createElement('input');
+        let newDiv = document.createElement('div');
+
+        i.setAttribute('class', 'bx-code');
         input.setAttribute('class', 'contact__form__box__input bx-code');
-        input.placeholder = 'swedish postal code';
+        newDiv.setAttribute('class', 'contact__form__box');
+        input.placeholder = 'Swedish postal code';
 
         const phoneInput = document.querySelector(
             '.contact__form__box input[type="tel"]'
         );
-        phoneInput.insertAdjacentElement('afterend', input);
 
-        parentNode.appendChild(br);
-        // parentNode.appendChild(input);
+        i.appendChild(input);
+        newDiv.appendChild(i);
+        newDiv.appendChild(br);
+
+        // Insert the new div after the existing contact__form__box div
+        parentNode.insertAdjacentElement('afterend', newDiv);
     }
 }
 
