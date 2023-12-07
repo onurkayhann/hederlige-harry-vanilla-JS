@@ -72,7 +72,7 @@ function checkEmail() {
         let newDiv = document.createElement('div');
 
         i.setAttribute('class', 'bx-code');
-        input.setAttribute('class', 'contact__form__box__input bx-code');
+        input.setAttribute('class', 'contact__form__box__input');
         newDiv.setAttribute('class', 'contact__form__box');
         input.placeholder = 'Swedish postal code';
 
