@@ -37,7 +37,7 @@ phone.addEventListener('input', function () {
     const phoneText = 'Filling the phone field';
 
     if (phone.value.trim() !== '') {
-        createParagraph(phoneText);
+        createParagraph(phone.value);
         console.log(phone.value, phoneText);
     } else {
         console.log('Please dont leave it empty, fill in the phone field');
@@ -53,10 +53,32 @@ phone.addEventListener('input', function () {
 
 // 6. Skapa en ny branch som du kallar för VG✅
 
-// 7. När man ändrar email-fältet: Om man skrivit in en ".se"-address så ska du: 
-// skapa/visa ett fält som heter swedishpostalcode med klass bx-code. 
+// 7. När man ändrar email-fältet: Om man skrivit in en ".se"-address så ska du:
+// skapa/visa ett fält som heter swedishpostalcode med klass bx-code.
 // Annars ska den INTE visas
+const newEmail = document.getElementById('email');
+const br = document.createElement('br');
 
+let parentNode = document.querySelector('.contact__form__box');
+
+// Function to check email and add input
+function checkEmail() {
+    if (newEmail.value.includes('.se')) {
+        let input = document.createElement('input');
+        input.setAttribute('class', 'contact__form__box__input bx-code');
+        input.placeholder = 'swedish postal code';
+
+        const phoneInput = document.querySelector(
+            '.contact__form__box input[type="tel"]'
+        );
+        phoneInput.insertAdjacentElement('afterend', input);
+
+        parentNode.appendChild(br);
+        // parentNode.appendChild(input);
+    }
+}
+
+newEmail.addEventListener('input', checkEmail);
 
 // 8. Skapa en array med 10 bilar - varje bil ska ha bildurl + id  + typ + årtal. Dessa ska renderas så som dom görs idag
 // id = löpnummer bildurl = det finns ca 100 bilar på
